@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkata Phani Bhargav Kode — FPGA Design & Verification Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Bhargav Kode<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="circuit-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">FPGA Design &amp; Verification Engineer</p>
+      <h1 class="hero-headline">
+        I build digital hardware<br />
+        <span class="accent">that ships to production.</span>
+      </h1>
+      <p class="hero-body">
+        5+ years designing RTL, closing timing, and verifying silicon —
+        from 720p real-time pipelines to full pipelined RISC-V processors.
+        Based in Manteca, CA.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See My Projects</a>
+        <a href="mailto:kodephanibhargav@gmail.com" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="proof-strip">
+        <p class="proof-label">Experience at</p>
+        <div class="proof-logos">
+          <span class="proof-co">Arrow Electronics</span>
+          <span class="proof-co">Skynetics Pvt. Ltd</span>
+          <span class="proof-co">Solar Industries India</span>
+          <span class="proof-co">Florida Institute of Technology</span>
+        </div>
+      </div>
+    </div>
+    <a href="#experience" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ── Impact Numbers ──────────────────────────────────────────────────── -->
+  <section id="numbers">
+    <div class="container numbers-grid">
+      <div class="number-item reveal">
+        <span class="number-val">200<small>MHz</small></span>
+        <span class="number-label">Timing closure achieved</span>
+      </div>
+      <div class="number-item reveal">
+        <span class="number-val">20<small>%</small></span>
+        <span class="number-label">LUT reduction via optimization</span>
+      </div>
+      <div class="number-item reveal">
+        <span class="number-val">95<small>%+</small></span>
+        <span class="number-label">Functional coverage on RISC-V UVM env</span>
+      </div>
+      <div class="number-item reveal">
+        <span class="number-val">200<small>MB/s</small></span>
+        <span class="number-label">AXI-Stream throughput delivered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ──────────────────────────────────────────────────────── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-num">01.</span> Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <h3 class="tl-role">Design Verification Intern</h3>
+                <p class="tl-co"><strong>Arrow Electronics</strong> &mdash; USA</p>
+              </div>
+              <span class="tl-date">Jun – Nov 2025</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Verified AXI DMA and PCIe-based ASIC/FPGA IPs using SystemVerilog and UVM</li>
+              <li>Built reusable UVM drivers, monitors, scoreboards, sequences, and coverage models</li>
+              <li>Developed SVA assertions for AXI handshake, ordering, and burst validation</li>
+              <li>Automated regressions and debug log analysis using Python and Tcl</li>
+              <li>Participated in verification planning and coverage closure</li>
+            </ul>
+            <div class="tl-stack">
+              <span>UVM</span><span>SystemVerilog</span><span>AXI DMA</span>
+              <span>PCIe</span><span>SVA</span><span>Python</span><span>Tcl</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <h3 class="tl-role">FPGA Design Engineer</h3>
+                <p class="tl-co"><strong>Skynetics Pvt. Ltd</strong> &mdash; India</p>
+              </div>
+              <span class="tl-date">Oct 2021 – Oct 2023</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Designed SDR communication pipeline on Zynq UltraScale+ MPSoC</li>
+              <li>Implemented VHDL modules for I/Q capture and packet processing</li>
+              <li>Achieved <strong>100+ MHz timing closure</strong> on real-time SDR pipeline</li>
+              <li>Built SystemVerilog testbenches for AXI/DMA validation</li>
+              <li>Led FPGA bring-up using Vivado ILA, UART, Ethernet, and JTAG</li>
+            </ul>
+            <div class="tl-stack">
+              <span>Zynq UltraScale+</span><span>VHDL</span><span>SDR</span>
+              <span>AXI/DMA</span><span>Vivado ILA</span><span>JTAG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <h3 class="tl-role">FPGA Design Engineer</h3>
+                <p class="tl-co"><strong>Solar Industries India</strong></p>
+              </div>
+              <span class="tl-date">Aug 2018 – Jul 2021</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Built <strong>720p @ 60 FPS</strong> real-time FPGA image processing pipeline</li>
+              <li>Achieved <strong>150–200 MHz timing closure</strong> on production design</li>
+              <li>Designed AXI-Stream architecture delivering <strong>200+ MB/s throughput</strong></li>
+              <li>Reduced LUT utilization by <strong>20%</strong> through resource optimization</li>
+            </ul>
+            <div class="tl-stack">
+              <span>AXI-Stream</span><span>Image Processing</span>
+              <span>STA</span><span>Resource Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot tl-dot-dim"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <h3 class="tl-role">Graduate Teaching Assistant</h3>
+                <p class="tl-co"><strong>Florida Institute of Technology</strong></p>
+              </div>
+              <span class="tl-date">Jan – Dec 2024</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Supported Microcomputer Systems and Electronics labs</li>
+              <li>Mentored students in assembly programming and hardware debugging</li>
+            </ul>
+            <div class="tl-stack">
+              <span>Assembly</span><span>Embedded Systems</span><span>Mentoring</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────────────────────── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02.</span> Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">📐</span> HDL &amp; Programming</h3>
+          <div class="skill-tags">
+            <span class="tag primary">SystemVerilog</span>
+            <span class="tag primary">Verilog</span>
+            <span class="tag primary">VHDL</span>
+            <span class="tag">Python</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">Tcl</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">✅</span> Verification</h3>
+          <div class="skill-tags">
+            <span class="tag green">UVM</span>
+            <span class="tag green">SVA</span>
+            <span class="tag green">Constrained-Random</span>
+            <span class="tag green">Functional Coverage</span>
+            <span class="tag green">Code Coverage</span>
+            <span class="tag green">Cocotb</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">🛠</span> EDA Tools</h3>
+          <div class="skill-tags">
+            <span class="tag purple">Vivado</span>
+            <span class="tag purple">Vitis HLS</span>
+            <span class="tag purple">QuestaSim</span>
+            <span class="tag purple">ModelSim</span>
+            <span class="tag purple">Synopsys VCS</span>
+            <span class="tag purple">Design Compiler</span>
+            <span class="tag purple">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">⚡</span> FPGA / SoC Design</h3>
+          <div class="skill-tags">
+            <span class="tag orange">RTL Design</span>
+            <span class="tag orange">Vitis HLS</span>
+            <span class="tag orange">AXI DMA</span>
+            <span class="tag orange">DFX / Partial Reconfiguration</span>
+            <span class="tag orange">CDC / RDC</span>
+            <span class="tag orange">STA</span>
+            <span class="tag orange">Pipelining</span>
+            <span class="tag orange">Floorplanning</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">📡</span> Protocols</h3>
+          <div class="skill-tags">
+            <span class="tag blue">AXI4</span>
+            <span class="tag blue">AXI-Lite</span>
+            <span class="tag blue">AXI-Stream</span>
+            <span class="tag blue">PCIe</span>
+            <span class="tag blue">AHB / APB</span>
+            <span class="tag blue">Ethernet</span>
+            <span class="tag blue">I2C / SPI / UART</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <h3><span class="sk-icon">🔬</span> Lab &amp; Debug</h3>
+          <div class="skill-tags">
+            <span class="tag red">Vivado ILA</span>
+            <span class="tag red">ChipScope</span>
+            <span class="tag red">JTAG</span>
+            <span class="tag red">Oscilloscope</span>
+            <span class="tag red">Logic Analyzer</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Git / GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects / Case Studies ────────────────────────────────────────── -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="section-num">03.</span> Selected Projects</h2>
+        <p class="section-sub">Four deep-dive case studies — from thesis research to industry verification.</p>
+      </div>
+
+      <!-- Project 1 — RISC-V (strongest, goes first) -->
+      <article class="case-study reveal" id="case-riscv">
+        <div class="case-visual">
+          <div class="mockup-pipeline">
+            <div class="pipe-label">RV32I · 5-Stage In-Order Pipeline</div>
+            <div class="pipe-stages">
+              <div class="pipe-stage"><span class="ps-abbr">IF</span><span class="ps-name">Fetch</span></div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-stage"><span class="ps-abbr">ID</span><span class="ps-name">Decode</span></div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-stage active"><span class="ps-abbr">EX</span><span class="ps-name">Execute</span></div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-stage"><span class="ps-abbr">MEM</span><span class="ps-name">Memory</span></div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-stage"><span class="ps-abbr">WB</span><span class="ps-name">Write-Back</span></div>
+            </div>
+            <div class="pipe-features">
+              <span class="pf">Data Forwarding</span>
+              <span class="pf">Hazard Detection</span>
+              <span class="pf">Branch Control</span>
+            </div>
+            <div class="uvm-bar">
+              <div class="uvm-bar-label">Functional Coverage</div>
+              <div class="uvm-bar-track">
+                <div class="uvm-bar-fill" style="width:95%"></div>
+                <span class="uvm-bar-val">95%+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-meta">
+            <span class="case-tag-cat">RTL Design &amp; Verification</span>
+            <span class="case-badge best">Strongest Work</span>
+          </div>
+          <h3 class="case-title">5-Stage Pipelined RISC-V RV32I Processor</h3>
+          <div class="narrative">
+            <div class="narrative-block">
+              <span class="n-label">Challenge</span>
+              <p>Design a complete RV32I processor core with data hazard resolution and full UVM verification — proving silicon-readiness before tape-out.</p>
+            </div>
+            <div class="narrative-block">
+              <span class="n-label">Solution</span>
+              <p>Built a 5-stage in-order pipeline in SystemVerilog with data-forwarding paths and hazard detection logic. Developed a full UVM environment with driver, monitor, scoreboard, and constrained-random instruction sequences covering all RV32I instruction classes.</p>
+            </div>
+            <div class="narrative-block outcome-block">
+              <span class="n-label outcome-label">Outcome</span>
+              <div class="outcome-metrics">
+                <div class="om"><span class="om-val">95%+</span><span class="om-desc">Functional coverage across all RV32I instruction classes</span></div>
+                <div class="om"><span class="om-val">0</span><span class="om-desc">Hazard-induced errors — validated via scoreboard comparison</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-stack">
+            <span>SystemVerilog</span><span>UVM</span><span>RISC-V RV32I</span>
+            <span>Pipelining</span><span>Hazard Detection</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 — Adaptive Noise Filtering (thesis part 1) -->
+      <article class="case-study case-study-flip reveal" id="case-noise">
+        <div class="case-visual">
+          <div class="mockup-scope">
+            <div class="scope-header">
+              <span class="scope-dot r"></span><span class="scope-dot g"></span>
+              <span class="scope-title">Adaptive Filter System — Zynq-7020</span>
+            </div>
+            <!-- Architecture flow -->
+            <div class="scope-flow">
+              <div class="flow-step">
+                <span class="flow-tool">Vitis HLS</span>
+                <div class="flow-ips">
+                  <span class="flow-ip lms">LMS IP</span>
+                  <span class="flow-ip nlms">NLMS IP</span>
+                  <span class="flow-ip rls">RLS IP</span>
+                </div>
+              </div>
+              <div class="flow-arrow">↓ Export to Vivado</div>
+              <div class="flow-step flow-step-top">
+                <span class="flow-tool">Vivado Top-Level Design</span>
+                <div class="flow-toplevel">
+                  <div class="flow-ip-row">
+                    <span class="flow-ip lms">LMS</span>
+                    <span class="flow-ip nlms">NLMS</span>
+                    <span class="flow-ip rls">RLS</span>
+                  </div>
+                  <div class="flow-gpio">
+                    <span class="flow-gpio-label">GPIO Select</span>
+                    <span class="flow-gpio-desc">Picks active filter per noise condition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scope-resource-bar">
+              <div class="srb-row"><span class="srb-label">LUTs</span><div class="srb-track"><div class="srb-fill" style="width:29%"></div></div><span class="srb-val">&lt;30%</span></div>
+              <div class="srb-row"><span class="srb-label">Flip-Flops</span><div class="srb-track"><div class="srb-fill srb-ff" style="width:19%"></div></div><span class="srb-val">&lt;20%</span></div>
+              <div class="srb-row"><span class="srb-label">DSP Slices</span><div class="srb-track"><div class="srb-fill srb-dsp" style="width:25%"></div></div><span class="srb-val">~25%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-meta">
+            <span class="case-tag-cat">FPGA Acceleration · Master's Thesis — Part 1</span>
+            <span class="case-badge thesis">Thesis</span>
+          </div>
+          <h3 class="case-title">Static Adaptive Noise Filter System on Zynq-7020</h3>
+          <div class="narrative">
+            <div class="narrative-block">
+              <span class="n-label">Challenge</span>
+              <p>LMS, NLMS, and RLS adaptive filters are compute-intensive and each suits different noise conditions. A unified hardware system was needed that could host all three and switch between them in real time on the Zynq-7020 FPGA.</p>
+            </div>
+            <div class="narrative-block">
+              <span class="n-label">Solution</span>
+              <p>Designed LMS, NLMS, and RLS accelerators in <strong>Vitis HLS</strong> and exported them as AXI-compatible IP cores to <strong>Vivado</strong>. Built a top-level block design instantiating all three IPs simultaneously, with a <strong>GPIO peripheral</strong> selecting the active filter at runtime based on noise conditions. Integrated AXI DMA and DDR controllers; validated on hardware with Vivado ILA and JTAG.</p>
+            </div>
+            <div class="narrative-block outcome-block">
+              <span class="n-label outcome-label">Outcome</span>
+              <div class="outcome-metrics">
+                <div class="om"><span class="om-val">&lt;30%</span><span class="om-desc">LUTs used — all three filter datapaths fit comfortably</span></div>
+                <div class="om"><span class="om-val">~25%</span><span class="om-desc">DSP slices — headroom remaining for additional processing</span></div>
+              </div>
+              <p class="outcome-note">Each algorithm offers distinct trade-offs: LMS excels in simplicity and power; NLMS in stability under varying conditions; RLS in fastest convergence for performance-critical paths.</p>
+            </div>
+          </div>
+          <div class="case-stack">
+            <span>Zynq-7020</span><span>Vitis HLS</span><span>Vivado</span>
+            <span>AXI DMA</span><span>GPIO</span><span>DDR</span><span>ILA / JTAG</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 — DFX (thesis part 2) -->
+      <article class="case-study reveal" id="case-dfx">
+        <div class="case-visual">
+          <div class="mockup-dfx">
+            <div class="dfx-label">Dynamic Function eXchange — Zynq-7020</div>
+            <div class="dfx-diagram">
+              <div class="dfx-static">
+                <span class="dfx-region-label">Static Region (Parent Config)</span>
+                <div class="dfx-static-blocks">
+                  <div class="dsb">PS Core</div>
+                  <div class="dsb">DDR Controller</div>
+                  <div class="dsb">AXI Interconnect</div>
+                  <div class="dsb">GPIO / I/O</div>
+                </div>
+              </div>
+              <div class="dfx-pblocks">
+                <span class="dfx-region-label accent-label">Two Reconfigurable Pblocks</span>
+                <div class="dfx-pblock-row">
+                  <div class="dfx-pblock">
+                    <span class="pblock-name">pblock_0</span>
+                    <div class="dfx-slot active-slot">LMS Filter</div>
+                  </div>
+                  <div class="dfx-swap-icon">⇄</div>
+                  <div class="dfx-pblock">
+                    <span class="pblock-name">pblock_1</span>
+                    <div class="dfx-slot loading-slot">RLS Filter</div>
+                  </div>
+                </div>
+                <div class="dfx-swap-note">Runtime swap · No FPGA halt required</div>
+              </div>
+            </div>
+            <!-- Resource comparison -->
+            <div class="dfx-compare">
+              <div class="dfx-compare-header">
+                <span>Resource</span><span>Static</span><span>DFX Parent</span>
+              </div>
+              <div class="dfx-compare-row">
+                <span>LUTs</span>
+                <span class="cmp-val static-val">&lt;30%</span>
+                <span class="cmp-val dfx-val">&lt;25% ↓</span>
+              </div>
+              <div class="dfx-compare-row">
+                <span>DSP48</span>
+                <span class="cmp-val static-val">~25%</span>
+                <span class="cmp-val dfx-val">5% ↓↓</span>
+              </div>
+              <div class="dfx-compare-row">
+                <span>Timing</span>
+                <span class="cmp-val static-val">Congested</span>
+                <span class="cmp-val dfx-val">Better Slack ↓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-meta">
+            <span class="case-tag-cat">Advanced FPGA · Master's Thesis — Part 2</span>
+            <span class="case-badge thesis">Thesis</span>
+          </div>
+          <h3 class="case-title">Live Filter Switching via Dynamic Function eXchange (DFX)</h3>
+          <div class="narrative">
+            <div class="narrative-block">
+              <span class="n-label">Challenge</span>
+              <p>The static design instantiates all three filter datapaths simultaneously, consuming ~25% DSP slices and causing routing congestion that limits timing slack. For embedded and battery-powered applications, a leaner architecture that loads only one filter at a time was needed — without halting the FPGA.</p>
+            </div>
+            <div class="narrative-block">
+              <span class="n-label">Solution</span>
+              <p>Implemented Xilinx <strong>Dynamic Function eXchange (DFX)</strong> by creating <strong>two pblocks</strong> as reconfigurable regions on the Zynq-7020. Generated partial bitstreams for each filter variant (LMS, NLMS, RLS) and designed a parent configuration holding the static logic. Filters are swapped at runtime — only one active filter resides in the fabric at any time — with CDC issues resolved across the pblock boundaries.</p>
+            </div>
+            <div class="narrative-block outcome-block">
+              <span class="n-label outcome-label">Outcome</span>
+              <div class="outcome-metrics">
+                <div class="om"><span class="om-val">5%</span><span class="om-desc">DSP48 used in DFX parent — vs ~25% in static design</span></div>
+                <div class="om"><span class="om-val">0</span><span class="om-desc">System downtime during filter switch — FPGA never halted</span></div>
+              </div>
+              <p class="outcome-note">Reduced logic density improved timing margin at 100 MHz target. Lower dynamic power makes this architecture ideal for hearing-aid devices and battery-powered audio systems.</p>
+            </div>
+          </div>
+          <div class="case-stack">
+            <span>DFX</span><span>Pblocks</span><span>Partial Bitstreams</span>
+            <span>CDC Analysis</span><span>STA</span><span>100 MHz</span><span>Vivado</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 — AXI4 VIP -->
+      <article class="case-study case-study-flip reveal" id="case-axi">
+        <div class="case-visual">
+          <div class="mockup-axi">
+            <div class="axi-label">AXI4 Handshake — UVM Monitor Capture</div>
+            <div class="axi-signals">
+              <div class="axi-sig">
+                <span class="sig-name">ACLK</span>
+                <svg viewBox="0 0 300 28" class="sig-wave">
+                  <polyline points="0,22 0,6 20,6 20,22 40,22 40,6 60,6 60,22 80,22 80,6 100,6 100,22 120,22 120,6 140,6 140,22 160,22 160,6 180,6 180,22 200,22 200,6 220,6 220,22 240,22 240,6 260,6 260,22 280,22 280,6 300,6" stroke="#475569" stroke-width="1.5" fill="none"/>
+                </svg>
+              </div>
+              <div class="axi-sig">
+                <span class="sig-name">AWVALID</span>
+                <svg viewBox="0 0 300 28" class="sig-wave">
+                  <polyline points="0,22 40,22 40,6 160,6 160,22 300,22" stroke="#00d4ff" stroke-width="1.5" fill="none"/>
+                  <rect x="40" y="6" width="120" height="16" fill="rgba(0,212,255,0.08)"/>
+                </svg>
+              </div>
+              <div class="axi-sig">
+                <span class="sig-name">AWREADY</span>
+                <svg viewBox="0 0 300 28" class="sig-wave">
+                  <polyline points="0,22 60,22 60,6 160,6 160,22 300,22" stroke="#00ff9d" stroke-width="1.5" fill="none"/>
+                  <rect x="60" y="6" width="100" height="16" fill="rgba(0,255,157,0.08)"/>
+                </svg>
+              </div>
+              <div class="axi-sig">
+                <span class="sig-name">WVALID</span>
+                <svg viewBox="0 0 300 28" class="sig-wave">
+                  <polyline points="0,22 60,22 60,6 200,6 200,22 300,22" stroke="#a78bfa" stroke-width="1.5" fill="none"/>
+                  <rect x="60" y="6" width="140" height="16" fill="rgba(167,139,250,0.08)"/>
+                </svg>
+              </div>
+              <div class="axi-sig">
+                <span class="sig-name">BVALID</span>
+                <svg viewBox="0 0 300 28" class="sig-wave">
+                  <polyline points="0,22 200,22 200,6 240,6 240,22 300,22" stroke="#fb923c" stroke-width="1.5" fill="none"/>
+                  <rect x="200" y="6" width="40" height="16" fill="rgba(251,146,60,0.08)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="axi-coverage">
+              <span class="axi-cov-item"><span class="cov-dot"></span>Burst validation</span>
+              <span class="axi-cov-item"><span class="cov-dot"></span>Ordering checks</span>
+              <span class="axi-cov-item"><span class="cov-dot"></span>Protocol compliance</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-meta">
+            <span class="case-tag-cat">Verification Engineering</span>
+          </div>
+          <h3 class="case-title">AXI4 Interconnect &amp; DMA Verification Environment</h3>
+          <div class="narrative">
+            <div class="narrative-block">
+              <span class="n-label">Challenge</span>
+              <p>An AXI4 DMA IP with complex burst modes and ordering rules needed exhaustive pre-silicon verification — corner cases that directed tests alone would never reach.</p>
+            </div>
+            <div class="narrative-block">
+              <span class="n-label">Solution</span>
+              <p>Built a reusable AXI VIP with UVM drivers, protocol-aware monitors, and a scoreboard. Applied constrained-random stimulus targeting burst boundaries, out-of-order responses, and all handshake edge cases. SVA assertions continuously checked AWVALID/READY handshake, burst ordering, and BVALID response correctness.</p>
+            </div>
+            <div class="narrative-block outcome-block">
+              <span class="n-label outcome-label">Outcome</span>
+              <div class="outcome-metrics">
+                <div class="om"><span class="om-val">SVA</span><span class="om-desc">Continuous protocol checks — zero handshake violations allowed through</span></div>
+                <div class="om"><span class="om-val">CR</span><span class="om-desc">Constrained-random tests exposing burst corner cases missed by directed tests</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-stack">
+            <span>UVM</span><span>SVA</span><span>AXI4 VIP</span>
+            <span>Constrained-Random</span><span>SystemVerilog</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── Education & Certs ───────────────────────────────────────────────── -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04.</span> Education &amp; Credentials</h2>
+      <div class="edu-row">
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">M.S.</div>
+          <div class="edu-body">
+            <h3>Master of Science</h3>
+            <p class="edu-field">Electrical Engineering</p>
+            <p class="edu-school">Florida Institute of Technology</p>
+            <p class="edu-focus">Thesis: Adaptive Noise Filtering on Reconfigurable Hardware (Zynq-7020)</p>
+            <span class="edu-date">Jan 2024 – Dec 2025</span>
+            <div class="coursework">
+              <p class="cw-label">Coursework</p>
+              <div class="cw-tags">
+                <span>Field Programmable Gate Arrays</span>
+                <span>Computer Architecture</span>
+                <span>Digital Communications</span>
+                <span>Wireless Communications</span>
+                <span>Image Processing</span>
+                <span>Thesis (FPGA)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-badge">B.Tech</div>
+          <div class="edu-body">
+            <h3>Bachelor of Technology <span class="hons">(Hons)</span></h3>
+            <p class="edu-field">Electronics &amp; Communication Engineering</p>
+            <p class="edu-school">Lovely Professional University</p>
+            <span class="edu-date">Aug 2013 – Jun 2017</span>
+            <div class="coursework">
+              <p class="cw-label">Coursework</p>
+              <div class="cw-tags">
+                <span>Digital VLSI Design</span>
+                <span>Digital Signal Processing</span>
+                <span>Image Processing</span>
+                <span>PCB Design &amp; Fabrication</span>
+                <span>Digital Electronics</span>
+                <span>Analog Electronics</span>
+                <span>Electronics Measurements &amp; Instrumentation</span>
+                <span>Microprocessor &amp; Microcontrollers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="cert-heading">Certifications</h3>
+      <div class="cert-row">
+        <div class="cert-card reveal">
+          <div class="cert-ribbon">Certified</div>
+          <p class="cert-name">VLSI System on Chip Design</p>
+          <p class="cert-issuer">Maven Silicon &mdash; Feb 2026</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-ribbon">Certified</div>
+          <p class="cert-name">Learning Verilog for FPGA Development</p>
+          <p class="cert-issuer">LinkedIn Learning &mdash; Feb 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ────────────────────────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="contact-copy">
+          <p class="contact-eyebrow">Available for new opportunities</p>
+          <h2 class="contact-title">Let's build something<br /><span class="accent">that ships.</span></h2>
+          <p class="contact-body">
+            Looking for FPGA design or verification roles. Whether you have an open position,
+            a consulting project, or just want to talk hardware — reach out.
+          </p>
+          <a href="mailto:kodephanibhargav@gmail.com" class="btn btn-primary btn-lg">Send Me an Email</a>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:kodephanibhargav@gmail.com" class="clink">
+            <span class="clink-icon">✉</span>
+            <div><p class="clink-label">Email</p><p class="clink-val">kodephanibhargav@gmail.com</p></div>
+          </a>
+          <a href="tel:+13214675168" class="clink">
+            <span class="clink-icon">☎</span>
+            <div><p class="clink-label">Phone</p><p class="clink-val">+1 321-467-5168</p></div>
+          </a>
+          <a href="https://www.linkedin.com/in/phani-k-5aab7b302/" target="_blank" rel="noopener" class="clink">
+            <span class="clink-icon">in</span>
+            <div><p class="clink-label">LinkedIn</p><p class="clink-val">linkedin.com/in/phani-k-5aab7b302</p></div>
+          </a>
+          <div class="clink clink-loc">
+            <span class="clink-icon">📍</span>
+            <div><p class="clink-label">Location</p><p class="clink-val">Manteca, CA — Open to relocation</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">Venkata Phani Bhargav Kode<span class="dot">.</span></a>
+      <p class="footer-sub">FPGA Design &amp; Verification Engineer &mdash; Manteca, CA</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
